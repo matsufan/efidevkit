@@ -3,18 +3,20 @@
 
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
     <tr>
-       <td><p>The following three tables explain the structure of the EDK source code.  The tables are:</p>
+       <td><p><strong>The EDK Module Structure Explained </strong></p>
+         <p>&nbsp;</p>
+         <p>The following three tables explain the structure of the EDK source code.</p>
          <ul>
-           <li>Module Maintainers: a list of who is responsible for the module. This reponsibility includes ensuring proper management of defects, enhancements and code quality of changes to code that falls within this module. </li>
-           <li>Directory to Module Table: this table explains the relationship between the CVS directories and the EDK Module List</li>
-           <li>Definition to Module Table: this table explains the definition of each module </li>
+           <li><a href="#Maintainers">Module Maintainers:</a> a list of who is responsible for the module. This reponsibility includes ensuring proper management of defects, enhancements and code quality of changes to code that falls within this module. </li>
+           <li><a href="#DirtoModule">Directory to Module Table:</a> this table explains the relationship between the CVS directories and the EDK Module List</li>
+           <li><a href="#DeftoModule">Definition to Module Table:</a> this table explains the definition of each module </li>
          </ul>         
+         <p>         
          <p><b>Important Links:</b><br>
            <a href="http://edk.tianocore.org/issuetrackerdiagram.html"> TianoCore Defect Resolution Process </a><br>
-           Link to EDK Project Roles and Responsibilities <br>
+           <a href="#">EDK Project Roles and Responsibilities</a> <br>
            <a href="mailto:%20%20errhoads@tianocore.org">Questions?</a><br>
            <br>
-         
       </td>
 
   </tr>
@@ -22,7 +24,7 @@
 
 <table border="1" cellspacing="2" cellpadding="3" width="100%">
 <tr>
-<th colspan=2>EDK Module Maintainer List </th>
+<th colspan=2>EDK Module Maintainer List <a name="Maintainers"></a></th>
 </tr>
 <tr class="a">
 <td width="50%"><strong>Module</strong></td>
@@ -165,18 +167,472 @@
   <td><a href="mailto:%20andrew.j.fish@intel.com%20">Andrew Fish</a></td>
 </tr>
 <tr>
-<th colspan=2>Directory-to-Module Table </th>
+<th colspan=2>Directory-to-Module Table<a name="DirtoModule"></a> </th>
 </tr>
 <tr class="a">
-  <td>&nbsp;</td>
-  <td>&nbsp;</td>
+  <td>\Edk\Foundation\Core\Dxe</td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">DxeCore</td>
+  </table></td>
   </tr>
 <tr class="a">
-<td>&nbsp;</td>
-<td>&nbsp;</td>
+<td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Foundation\Core\Pei</td>
+</table></td>
+<td><table cellspacing="0" cellpadding="0">
+  <td width="241">PeiCore</td>
+</table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Foundation\Cpu</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">IA32CPU</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Foundation\Efi</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Generic definition</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Foundation\Framework</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Generic definition</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Foundation\Guid</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+    <td width="241">Refer to &quot;Definitions to Module&quot; table </td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Foundation\Include</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+    <td width="241">Refer to &quot;Definitions to Module&quot; table </td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Foundation\Library\CustomizedDecompress</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Compression</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Foundation\Library\Dxe</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Library</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Foundation\Library\EfiCommonLib</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Library</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Foundation\Library\Pei</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Library</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Foundation\Library\RuntimeDxe\EfiRuntimeLib</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Runtime</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Foundation\Ppi</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+    <td width="241">Refer to &quot;Definitions to Module&quot; table </td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Foundation\Protocol</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+    <td width="241">Refer to &quot;Definitions to Module&quot; table </td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Other\Maintained\Application</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Application</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Other\Maintained\Tools</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Tools</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Other\Maintained\Universal\Disk\FileSystem\Fat</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">FAT</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Bus\Pci\AtapiPassThru</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">ATA</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Bus\Pci\CirrusLogic</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">CirrusLogic</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Bus\Pci\IdeBus</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">ATA</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Bus\Pci\PciBus</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">PCI</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Bus\Pci\Uhci</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">USB</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Bus\Pci\Undi</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Network</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Bus\Scsi</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">SCSI</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Bus\Usb</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">USB</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Bus\WinNtThunk</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">WinNT</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Chipset\WinNtThunk</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">WinNT</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Cpu\DebugSupport\Dxe\ia32</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Debug</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Cpu\DebugSupport\Dxe\ipf</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Debug</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Cpu\WinNtThunk</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">WinNT</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Include</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">WinNT</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Library\Dxe\WinNt</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">WinNT</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Platform\Generic\Dxe\ConPlatform</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Console</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Platform\Generic\Dxe\GenericBds</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">BDS</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Platform\Generic\Dxe\PlatformBds</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">WinNT</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Platform\Generic\Logo</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Logo</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Platform\Generic\MonoStatusCode</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">StatusCode</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Platform\Generic\Pei\Capsule</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Capsule</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Platform\Generic\RuntimeDxe\FvbService</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Flash</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Platform\Generic\RuntimeDxe\StatusCode</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">StatusCode</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Platform\IPF</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">EDK IPF Tip</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Platform\Nt32</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">WinNT</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Tools</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Tools</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Universal\Console</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Console</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Universal\DataHub</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">DataHub</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Universal\Debugger</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Debug</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Universal\Disk</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Disk</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Universal\DxeIpl</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">DxeIpl</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Universal\Ebc</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">EBC</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Universal\FirmwareVolume</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Flash</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Universal\GenericMemoryTest</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">MemoryTest</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Universal\MonotonicCounter</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Flash</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Universal\Network</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Network</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Universal\Runtime</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Runtime</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Universal\Security</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Security</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Universal\UserInterface</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">UI</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Universal\Variable</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Variable</td>
+  </table></td>
+</tr>
+<tr class="a">
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="348">.\Edk\Sample\Universal\WatchdogTimer</td>
+  </table></td>
+  <td><table cellspacing="0" cellpadding="0">
+  <td width="241">Timer</td>
+  </table></td>
 </tr>
 <tr>
-<th colspan=2>Definition-to-Module Table </th>
+<th colspan=2>Definition-to-Module Table <a name="DeftoModule"></a></th>
 </tr>
 <tr class="a">
 <td>&nbsp;</td>
